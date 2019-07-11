@@ -1,0 +1,31 @@
+{
+  "name": "vidya",
+  "version": "1.0.0",
+  "description": "a simple video player made with jQuery, JavaScript, HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmazomba/vidya.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML5",
+    "CSS",
+    "jQuery"
+  ],
+  "author": "Hlumisa Mazomba",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hmazomba/vidya/issues"
+  },
+  "homepage": "https://github.com/hmazomba/vidya#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
+  }
+}

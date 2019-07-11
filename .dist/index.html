@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400i&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <title>Vidya</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">
+        Vidya
+      </h1>
+    </div>
+    <div id="frame"></div>
+    <div id="main">
+      <div id="videoPanel">
+        <video
+          id="myVideo"
+          width="670"
+          height="400"
+          src="./media/video/Lucky Escape.mp4"
+        ></video>
+      </div>
+      <div id="controls-bar">
+        <div id="seek-bar">
+          <!-- <div id="fill"></div> -->
+          <progress id="progress-bar" min="0" max="100" value="0"></progress>
+        </div>
+        <div id="controls">
+          <div id="currentTime">00:00 / 00:00</div>
+          <div id="button">
+            <i class="fas fa-play" id="playBtn" onclick="playOrPause()"></i>
+          </div>
+          <div id="button">
+            <i class="fas fa-volume-up" id="speaker"></i>
+          </div>
+          <!-- <img src="play.png" onclick="playOrPause()" /> -->
+          <div id="input">
+            <input
+              type="range"
+              id="volume"
+              min="0"
+              max="100"
+              value="100"
+              step="1"
+              onchange="changeVolume(this.value)"
+              oninput="changeVolume(this.value)"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
